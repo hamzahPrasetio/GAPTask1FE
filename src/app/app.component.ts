@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'task1fe';
+
+  constructor(private router: Router) {}
+
+  navigateToTeamList(): void {
+    this.router.navigate(['/team-list']);
+  }
+
+  navigateToPlayerList(): void {
+    this.router.navigate(['/player-list']);
+  }
 }

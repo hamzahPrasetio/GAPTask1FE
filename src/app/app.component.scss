@@ -1,0 +1,42 @@
+/* styles.scss */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #4CAF50; /* Green background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white; /* White text */
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white; /* White background on hover */
+  color: #4CAF50; /* Green text on hover */
+  border-radius: 5px;
+}
+
+.separator {
+  color: white; /* White separator */
+  margin: 0 10px;
+}
+
+router-outlet {
+  margin: 20px; /* Add margin around the outlet */
+}
